@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+        --color-bodyc: #f9f9f9;
+        --color-steel: #5e5e5e;
+        --color-ash: #e2e2e2;
+        --color-light-gray:#f3f3f3;
+}
+    </style>
+
+    <script src="https://kit.fontawesome.com/5fc1d509d9.js" crossorigin="anonymous"></script>
+    <title>Student Portfolio/Home</title>
+</head>
+
+<body class="bg-bodyc">
+    <header class="flex flex-wrap items-center justify-between gap-4 border-b-2 border-black px-4 py-3 lg:px-8">
+        <a href="index.html"
+            class="font-bold uppercase text-base hover:opacity-60 transition duration-300">Student_portfolio_v1</a>
+        <nav class="uppercase w-full md:w-auto order-last md:order-none">
+            <ul class="flex gap-4 text-xs text-gray-500 font-semibold">
+                <li><a href="index.html" aria-current="page"
+                        class="aria-[current=page]:text-black aria-[current=page]:underline aria-[current=page]:underline-offset-4 aria-[current=page]:font-bold hover:text-black transition duration-300 hover:scale-105 inline-block">Home</a>
+                </li>
+                <li><a href="projects.html"
+                        class="hover:text-black transition duration-300 hover:scale-105 inline-block">Projects</a></li>
+                <li><a href="contact.html"
+                        class="hover:text-black transition duration-300 hover:scale-105 inline-block">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="flex items-center gap-3">
+            <button aria-label="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <a href="#"
+                class="text-xs font-semibold bg-black text-bodyc px-4 py-1 hover:bg-steel transition duration-300 hover:scale-105">DOWNLOAD_CV</a>
+        </div>
+    </header>
+    <main>
+        <section class="grid md:grid-cols-[2fr_1fr] px-4 py-10 lg:py-16 lg:px-8 gap-5 items-center">
+            <div>
+                <p class="text-xs tracking-[0.3em] text-steel mb-4">SELECTED WORKS 2023-24</p>
+                <h1 class="text-3xl sm:text-4xl lg:text-6xl font-black leading-[0.9] tracking-tighter">
+                    ARCHITECTURAL
+                    <br>INTEGRITY &
+                    <br>
+                    SPATIAL LOGIC.
+                </h1>
+            </div>
+            <div class="flex flex-col gap-6">
+                <p class="border-black border-l-3 pl-4 text-xs text-steel w-full max-w-[16rem] tracking-wide leading-5">
+                    A focused investigation
+                    into modular structures
+                    and technical precision
+                    within high-density urban
+                    environments. Designed for clarity, authority, and high-performance utility.</p>
+                <div class="flex flex-wrap gap-3 justify-start">
+                    <a href="projects.html"
+                        class="text-xs text-center font-semibold bg-black text-bodyc px-4 py-2 hover:bg-steel transition duration-300 hover:scale-105 w-full max-w-[140px]">EXPLORE
+                        <br>
+                        PORTFOLIO</a>
+
+                    <a href="#"
+                        class="text-xs text-center font-semibold bg-ash text-black px-4 py-2 hover:bg-gray-300 transition duration-300 hover:scale-105 w-full max-w-[140px]">OUR
+                        <br>
+                        PHILOSOPHY</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section
+            class="grid grid-cols-2 md:grid-cols-4 gap-3 px-4 py-6 lg:px-8 bg-light-gray border-y-2 border-gray-300">
+            <div class="md:border-r-2 border-gray-300">
+                <p class="text-xs text-gray-500 font-semibold">PROJECTS COMPLETED</p>
+                <p class="font-black text-3xl italic">42+</p>
+            </div>
+            <div class="md:border-r-2 border-gray-300 md:pl-6">
+                <p class="text-xs text-gray-500  font-semibold">GLOBAL AWARDS</p>
+                <p class="font-black text-3xl italic">12</p>
+            </div>
+            <div class="md:border-r-2 border-gray-300 md:pl-6">
+                <p class="text-xs text-gray-500  font-semibold">TECHNICAL CERTS</p>
+                <p class="font-black text-3xl italic">08</p>
+            </div>
+            <div class="md:justify-self-end">
+                <p class="text-xs text-gray-500  font-semibold">DESIGN LABS</p>
+                <p class="font-black text-3xl italic">03</p>
+            </div>
+
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-[2rem] text-xs px-4 lg:px-8 ">
+            <a href="projects.html" class="overflow-hidden group grid grid-rows-1 h-[30rem] text-white">
+                <img src="src/images.jpg" alt="The Monolith Pavilion"
+                    class=" transition duration-700 group-hover:scale-105 grayscale w-full h-full col-start-1 row-start-1 object-cover">
+                <div class="bg-linear-to-t from-black/80 to-transparent p-6 col-start-1 row-start-1 self-end z-10">
+                    <p class="tracking-widest">PROJECT 001</p>
+                    <h2 class="tracking-tighter font-bold text-xl">THE MONOLITH PAVILION</h2>
+                    <p class="leading-4 text-[10px] pr-6 my-2">Exploration of concrete as a fluid yet structural element
+                        in
+                        public
+                        transit hubs.
+                    </p>
+                    <span class="text-[9px] font-bold tracking-widest">VIEW CASE STUDY<i
+                            class="transition duration-300 group-hover:translate-x-1 fa-solid fa-arrow-right px-1"></i></span>
+                </div>
+            </a>
+
+
+            <div class=" grid grid-rows-[auto_1fr] gap-3">
+                <div class="bg-ash p-4">
+                    <p class="text-xs tracking-[0.3em] text-steel mb-4">METHODOLOGY</p>
+                    <h2 class="font-black text-lg tracking-tighter">BIM INTEGRATION &amp; STRUCTURAL ANALYTICS </h2>
+                    <p class="text-xs text-steel tracking-wide leading-4 my-2">
+                        Every project follows a rigid grid system of 8px increments, ensuring mathematical perfection
+                        from initial concept to the final blueprint.</p>
+                    <div
+                        class="grid grid-cols-3 w-full gap-2 text-sm text-steel font-normal mt-4 border-t border-gray-400 pt-4">
+                        <p class="border-black border-b-3 ">CAD</p>
+                        <p class="border-black border-b-3 ">3D MAPPING</p>
+                        <p class=" border-gray-300 border-b-3 ">SUSTAINABILITY</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-[1rem]">
+                    <div class="bg-light-gray grid grid-rows-[auto_1fr]">
+                        <div class=" p-4">
+                            <p class=" text-sm text-steel font-normal">LAB
+                                ARCHIVE</p>
+                            <h3 class="font-black">SHADOW STUDIES</h3>
+                        </div>
+                        <div class="bg-black w-[5rem] h-[5rem] self-end justify-self-end "></div>
+                    </div>
+                    <div class="flex flex-col justify-center bg-black text-light-gray p-4 gap-1">
+                        <span><i class="fa-solid fa-compass-drafting"></i></span>
+                        <p class="text-sm text-light-gray font-medium tracking-wider leading-[2.5] mb-2">JOIN THE
+                            <br>
+                            ARCHITECTURAL
+                            <br> DIALOGUE.
+                        </p>
+                        <a href="contact.html"
+                            class="leading-4 text-[10px] border-1 self-start py-1 px-2 hover:bg-white hover:text-black transition duration-300">SUBMIT
+                            INQUIRY</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-4 py-6 lg:px-8">
+            <div class="flex items-end  justify-between border-b-2 py-3">
+                <div>
+                    <p class=" text-xs text-steel font-normal">INDEX</p>
+                    <h2 class="text-2xl font-black">CURRENT PROJECTS</h2>
+                </div>
+                <div class="text-right">
+                    <p class=" text-xs text-steel font-normal">SORT BY
+                    </p>
+                    <a href="#"
+                        class="text-xs text-steel font-bold underline hover:text-black transition duration-300">YEAR:
+                        2024</a>
+                </div>
+            </div>
+
+            <ul class="mt-6 divide-y divide-ash">
+                <li
+                    class="grid grid-cols-[3rem_1fr] md:grid-cols-[6rem_18rem_10rem_1fr]  gap-y-1 md:gap-y-0 items-center py-5 px-4 hover:bg-light-gray transition duration-300">
+                    <p>001</p>
+                    <p class="font-bold">VORTEX HOUSING COMPLEX</p>
+                    <p class="font-light col-start-2 md:col-start-auto">STOCKHOLM, SE</p>
+                    <div class="flex items-center gap-1 text-[0.5rem] col-start-2 md:col-start-auto">
+                        <p class=" bg-ash px-2 py-1">URBAN</p>
+                        <p class=" bg-ash px-2 py-1">RESIDENTIAL</p>
+                    </div>
+                </li>
+
+                <li
+                    class="grid grid-cols-[3rem_1fr] md:grid-cols-[6rem_18rem_10rem_1fr]  gap-y-1 md:gap-y-0 items-center  py-5 px-4 hover:bg-light-gray transition duration-300">
+                    <p>002</p>
+                    <p class="font-bold">THE LINEAR OBSERVATORY</p>
+                    <p class="font-light col-start-2 md:col-start-auto">ATACAMA, CL</p>
+                    <div class="flex items-center gap-1 text-[0.5rem] col-start-2 md:col-start-auto">
+                        <p class=" bg-ash px-2 py-1">SCIENCE</p>
+                        <p class=" bg-ash px-2 py-1">MINIMALIST</p>
+                    </div>
+                </li>
+
+                <li
+                    class="grid grid-cols-[3rem_1fr] md:grid-cols-[6rem_18rem_10rem_1fr] gap-y-1 md:gap-y-0 items-center py-5 px-4 hover:bg-light-gray transition duration-300">
+                    <p>003</p>
+                    <p class="font-bold">BRUTALIST ATRIUM</p>
+                    <p class="font-light col-start-2 md:col-start-auto">BERLIN, DE</p>
+                    <div class="flex items-center gap-1 text-[0.5rem] col-start-2 md:col-start-auto">
+                        <p class=" bg-ash px-2 py-1">PUBLIC</p>
+                        <p class=" bg-ash px-2 py-1">INTERIOR</p>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+    </main>
+    <footer class=" font-semibold tracking-tight">
+        <div class="flex flex-col items-center text-center gap-10 py-20 px-4 bg-black w-full">
+            <h2 class=" text-ash font-black text-2xl md:text-4xl tracking-tighter leading-tight">
+
+                STAY UPDATED ON THE LATEST <br> STRUCTURAL INVESTIGATIONS.</h2>
+            <form class="flex items-center w-full max-w-sm border-b border-white pb-2">
+                <input type="email" placeholder="EMAIL ADDRESS" aria-label="Email address"
+                    class="flex-1 outline-none text-xs tracking-widest text-white placeholder:text-white/40">
+                <button type="submit" aria-label="Subscribe"
+                    class="text-white transition duration-300 hover:translate-x-1">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+            <nav class="flex gap-8 text-[10px] tracking-[0.3em] text-white">
+                <a href="#" class="transition duration-300 hover:text-white/50">JOURNAL</a>
+                <a href="#" class="transition duration-300 hover:text-white/50">NOTES</a>
+                <a href="#" class="transition duration-300 hover:text-white/50">TWITTER</a>
+            </nav>
+
+
+
+
+        </div>
+
+        <div class="md:flex md:justify-between items-center px-4 py-6 lg:px-8 bg-ash ">
+            <p class="text-[0.7rem]">&copy; 2024 ARCHITECTURAL PORTFOLIO. ALL RIGHTS RESERVED.</p>
+            <div class="flex gap-3 text-[0.7rem] text-steel font-normal py-2 md:py-0">
+                <a href="#" class="hover:text-black transition duration-300">INSTAGRAM</a>
+                <a href="#" class="hover:text-black transition duration-300">LINKEDIN</a>
+                <a href="#" class="hover:text-black transition duration-300">GITHUB</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
